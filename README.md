@@ -1,14 +1,230 @@
-# Problem Statement:
-Predicting an artist’s popularity based on different independent variables like artists, popularity, Acousticness, Danceability, Duration_ms, Energy, Instrumentalness, liveness, loudness, speechiness, temp, key, valence, mode, and count.
-Data: At the end of each year, Spotify compiles a playlist of the songs streamed most often over the course of that year. This year's playlist (Top Tracks of 2018). The question is: What do these top songs have in common? Why do people like them?
-Original Data Source: The audio features for each song were extracted using the Spotify Web API and the Spotify Python library. Credit goes to Spotify for calculating the audio feature values.
-**Data Description:** There is one .csv file in the dataset. (top2018.csv) This file includes:
-•	Spotify URI for the song
-•	Name of the song
-•	Artist(s) of the song
-•	Audio features for the song (such as danceability, tempo, key, etc.)
-•	A more detailed explanation of the audio features can be found in the Metadata tab.
-The data set consists of 27622 observations. Where it contains 13 columns and 27622 rows. We considered the artist’s popularity as our response variable and the other 12 as independent variables.
+# 🎵 Spotify Artist Popularity Prediction using Multiple Linear Regression
 
-**Source of data:**  Kaggle
-**Software used:** Python
+Predicting an artist's popularity using Spotify audio features through **Multiple Linear Regression (MLR)** and statistical analysis.
+
+---
+
+## 📖 Project Overview
+
+This project aims to predict an artist's **popularity** using various Spotify audio features. A Multiple Linear Regression model is developed after performing exploratory data analysis, checking model assumptions, handling multicollinearity, and reducing dimensionality.
+
+The project demonstrates a complete statistical modeling workflow, from data preprocessing to model fitting using **Ordinary Least Squares (OLS)**.
+
+---
+
+## 🎯 Problem Statement
+
+Predict an artist's **popularity** based on the following independent variables:
+
+- Acousticness
+- Danceability
+- Duration (ms)
+- Energy
+- Instrumentalness
+- Liveness
+- Loudness
+- Speechiness
+- Tempo
+- Key
+- Valence
+- Mode
+
+The objective is to determine how these audio characteristics influence an artist's popularity and identify the most significant predictors.
+
+---
+
+## 📊 Dataset
+
+Spotify publishes an annual playlist containing the songs streamed most frequently worldwide. This project analyzes these tracks to understand what characteristics contribute to song popularity.
+
+### Dataset Information
+
+| Attribute | Details |
+|-----------|---------|
+| Dataset | top2018.csv |
+| Source | Kaggle |
+| Original Source | Spotify Web API |
+| Observations | 27,622 |
+| Features | 13 |
+| Response Variable | Popularity |
+| Independent Variables | 12 Audio Features |
+
+---
+
+## 📂 Features Used
+
+- Artist
+- Popularity *(Target Variable)*
+- Acousticness
+- Danceability
+- Duration_ms
+- Energy
+- Instrumentalness
+- Liveness
+- Loudness
+- Speechiness
+- Tempo
+- Key
+- Valence
+- Mode
+
+---
+
+## 🛠 Technologies Used
+
+- Python
+- Jupyter Notebook
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+- Statsmodels
+- Scikit-learn
+
+---
+
+## 📈 Methodology
+
+The following steps were performed during model development:
+
+- Data Import & Cleaning
+- Missing Value Analysis
+- Correlation Analysis
+- Heatmap Visualization
+- Multicollinearity Check (VIF)
+- Principal Component Analysis (PCA)
+- Multiple Linear Regression (OLS)
+- Model Interpretation
+
+---
+
+## 📂 Repository Structure
+
+```text
+Spotify-Artist-Popularity-Regression/
+│
+├── data/
+│   └── top2018.csv
+│
+├── notebooks/
+│   └── Predicting Artist popularity using Multiple linear regression LM code.ipynb
+│
+├── README.md
+├── requirements.txt
+└── .gitignore
+```
+
+---
+
+## 📊 Statistical Techniques
+
+The project makes use of the following statistical methods:
+
+- Multiple Linear Regression
+- Ordinary Least Squares (OLS)
+- Correlation Analysis
+- Heatmap Visualization
+- Variance Inflation Factor (VIF)
+- Principal Component Analysis (PCA)
+
+---
+
+## 📋 Workflow
+
+```
+Import Dataset
+        │
+        ▼
+Data Inspection
+        │
+        ▼
+Missing Value Analysis
+        │
+        ▼
+Exploratory Data Analysis
+        │
+        ▼
+Correlation Analysis
+        │
+        ▼
+Heatmap Visualization
+        │
+        ▼
+Multicollinearity Detection (VIF)
+        │
+        ▼
+Feature Selection
+        │
+        ▼
+Principal Component Analysis (PCA)
+        │
+        ▼
+Multiple Linear Regression (OLS)
+        │
+        ▼
+Model Interpretation
+```
+
+---
+
+## 📌 Results
+
+The analysis produced the following observations:
+
+- The response variable (**Popularity**) exhibits relatively low correlation with most individual predictor variables.
+- Several independent variables are highly correlated with one another, indicating multicollinearity.
+- Variables with **VIF greater than 5** were removed to improve model stability.
+- **Principal Component Analysis (PCA)** was applied to reduce dimensionality and minimize redundant information.
+- The final regression model was fitted using the **Ordinary Least Squares (OLS)** method to estimate the regression coefficients.
+
+---
+
+## 📚 Key Learnings
+
+- Importance of checking regression assumptions before model fitting.
+- Detecting and handling multicollinearity using VIF.
+- Using PCA for dimensionality reduction.
+- Building and interpreting Multiple Linear Regression models using OLS.
+- Performing exploratory data analysis to understand relationships among variables.
+
+---
+
+## 🚀 Running the Project
+
+### Clone the repository
+
+```bash
+git clone https://github.com/your-username/Spotify-Artist-Popularity-Regression.git
+```
+
+### Install the required libraries
+
+```bash
+pip install -r requirements.txt
+```
+
+### Launch Jupyter Notebook
+
+```bash
+jupyter notebook
+```
+
+Open the notebook:
+
+```
+Predicting Artist popularity using Multiple linear regression LM code.ipynb
+```
+
+Run all cells sequentially to reproduce the complete analysis.
+
+---
+
+## 📄 Data Source
+
+- Kaggle
+- Spotify Web API
+- Spotify Python Library
+
+The audio feature values were extracted using the Spotify Web API and calculated by Spotify.
+
+---
