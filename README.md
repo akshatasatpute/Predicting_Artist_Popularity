@@ -1,10 +1,10 @@
-# 🎵 Spotify Artist Popularity Prediction using Multiple Linear Regression
+# Spotify Artist Popularity Prediction using Multiple Linear Regression
 
 Predicting an artist's popularity using Spotify audio features through **Multiple Linear Regression (MLR)** and statistical analysis.
 
 ---
 
-## 📖 Project Overview
+## Project Overview
 
 This project aims to predict an artist's **popularity** using various Spotify audio features. A Multiple Linear Regression model is developed after performing exploratory data analysis, checking model assumptions, handling multicollinearity, and reducing dimensionality.
 
@@ -12,7 +12,7 @@ The project demonstrates a complete statistical modeling workflow, from data pre
 
 ---
 
-## 🎯 Problem Statement
+## Problem Statement
 
 Predict an artist's **popularity** based on the following independent variables:
 
@@ -33,7 +33,7 @@ The objective is to determine how these audio characteristics influence an artis
 
 ---
 
-## 📊 Dataset
+## Dataset
 
 Spotify publishes an annual playlist containing the songs streamed most frequently worldwide. This project analyzes these tracks to understand what characteristics contribute to song popularity.
 
@@ -51,7 +51,7 @@ Spotify publishes an annual playlist containing the songs streamed most frequent
 
 ---
 
-## 📂 Features Used
+## Features Used
 
 - Artist
 - Popularity *(Target Variable)*
@@ -70,7 +70,7 @@ Spotify publishes an annual playlist containing the songs streamed most frequent
 
 ---
 
-## 🛠 Technologies Used
+## Technologies Used
 
 - Python
 - Jupyter Notebook
@@ -83,7 +83,7 @@ Spotify publishes an annual playlist containing the songs streamed most frequent
 
 ---
 
-## 📈 Methodology
+## Methodology
 
 The following steps were performed during model development:
 
@@ -98,7 +98,7 @@ The following steps were performed during model development:
 
 ---
 
-## 📂 Repository Structure
+## Repository Structure
 
 ```text
 Spotify-Artist-Popularity-Regression/
@@ -116,7 +116,7 @@ Spotify-Artist-Popularity-Regression/
 
 ---
 
-## 📊 Statistical Techniques
+## Statistical Techniques
 
 The project makes use of the following statistical methods:
 
@@ -129,7 +129,7 @@ The project makes use of the following statistical methods:
 
 ---
 
-## 📋 Workflow
+## Workflow
 
 ```
 Import Dataset
@@ -167,7 +167,7 @@ Model Interpretation
 
 ---
 
-## 📌 Results
+## Results
 
 The analysis produced the following observations:
 
@@ -179,7 +179,7 @@ The analysis produced the following observations:
 
 ---
 
-## 📚 Key Learnings
+## Key Learnings
 
 - Importance of checking regression assumptions before model fitting.
 - Detecting and handling multicollinearity using VIF.
@@ -189,7 +189,7 @@ The analysis produced the following observations:
 
 ---
 
-## 🚀 Running the Project
+## Running the Project
 
 ### Clone the repository
 
@@ -219,7 +219,7 @@ Run all cells sequentially to reproduce the complete analysis.
 
 ---
 
-## 📄 Data Source
+## Data Source
 
 - Kaggle
 - Spotify Web API
