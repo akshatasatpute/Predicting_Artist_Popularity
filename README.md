@@ -104,14 +104,15 @@ The following steps were performed during model development:
 Spotify-Artist-Popularity-Regression/
 │
 ├── data/
-│   └── top2018.csv
+│   └── artist.csv
 │
+├── docs/
+│   └── Multiple regression Final Report.docx
+|
 ├── notebooks/
 │   └── Predicting Artist popularity using Multiple linear regression LM code.ipynb
-│
 ├── README.md
 ├── requirements.txt
-└── .gitignore
 ```
 
 ---
@@ -194,7 +195,7 @@ The analysis produced the following observations:
 ### Clone the repository
 
 ```bash
-git clone https://github.com/your-username/Spotify-Artist-Popularity-Regression.git
+git clone https://github.com/akshatasatpute/Predicting_Artist_Popularity
 ```
 
 ### Install the required libraries
